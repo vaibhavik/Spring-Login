@@ -47,7 +47,7 @@ class MyAspect {
 	public void before(JoinPoint joinPoint) {
 		System.out.print("Before ");
 		System.out.print(joinPoint.getSignature().getName() + " called with ");
-		System.out.println(Arrays.toString(joinPoint.getArgs())); //Array form
+		System.out.println(Arrays.toString(joinPoint.getArgs())); //Array form`
 	}
 
 	@AfterReturning(pointcut = "execution(* com.webapp.aop.HiByeService.*(..))", returning = "result")
